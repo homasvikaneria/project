@@ -63,6 +63,14 @@ mongoose.connect(MONGO_URI, {
     process.exit(1); // Stop the server on failure
 });
 
+
+// Serve Frontend (built by Vite) from Express
+app.use(express.static(path.join(__dirname, "../Frontend/vite-project/dist")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../Frontend/vite-project/dist/index.html"));
+});
+
 // 🟢 Start the server
 app.listen(PORT, () => {
     console.log(`🚀 Server running on http://localhost:${PORT}`);
