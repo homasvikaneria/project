@@ -1,0 +1,254 @@
+/* General Page Styling */
+.property-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Left Section - Property Details */
+.property-info {
+  flex: 1;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.property-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.property-location {
+  font-size: 18px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+/* Key Details */
+.property-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.property-details span {
+  background: #f5f5f5;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+}
+
+/* Status Buttons */
+.property-status {
+  margin-top: 15px;
+}
+
+.sale-button,
+.rent-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sale-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.rent-button {
+  background-color: #ff9800;
+  color: white;
+}
+
+/* Price & Discount */
+.property-price {
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.discount-offer {
+  color: #e91e63;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 5px;
+}
+
+/* Owner Info */
+.property-owner {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.property-owner h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.property-owner p {
+  font-size: 14px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Facilities Section */
+.property-facilities {
+  margin-top: 20px;
+}
+
+.property-facilities h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.facility-item {
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Nearby Landmarks */
+.property-landmarks {
+  margin-top: 20px;
+}
+
+.property-landmarks h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.property-landmarks ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.property-landmarks li {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+
+/* Reviews */
+.property-reviews {
+  margin-top: 20px;
+}
+
+.property-reviews h2 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.review {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.review strong {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.review p {
+  font-size: 14px;
+  color: #444;
+  margin-top: 5px;
+}
+
+/* Right Section - Property Images */
+.property-image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.other-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.other-images img {
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.other-images img:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .property-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .property-image-section {
+    width: 100%;
+  }
+
+  .main-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .other-images img {
+    width: 80px;
+    height: 80px;
+  }
+}

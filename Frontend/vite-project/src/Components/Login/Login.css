@@ -1,0 +1,117 @@
+/* just_home/Frontend/vite-project/src/Components/Login/Login.css */
+/* Full Page Background */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://res.cloudinary.com/dmfjcttu9/image/upload/v1740630058/jf5wdjdfpqcuvcdjrdwx.png") no-repeat center center/cover;
+  }
+  
+  /* Login Card */
+  .login-paper {
+    padding: 30px;
+    width: 380px; /* Increased width */
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title */
+  .login-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+  }
+  
+  /* Google Login Button */
+  .google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: white;
+    color: black;
+  }
+  
+  .google-btn:hover {
+    background: #f1f1f1;
+  }
+  
+  .google-icon {
+    font-size: 18px;
+  }
+  
+  /* OR Divider */
+  .divider {
+    margin: 15px 0;
+    font-weight: bold;
+    text-align: center;
+    color: gray;
+  }
+  
+  /* Input Fields */
+  .login-input {
+    width: 100%;
+    margin-top: 10px !important;
+    background: #f5f5f5;
+    border-radius: 6px;
+  }
+  
+  .login-input input {
+    padding: 12px;
+  }
+  
+  /* Password Field Focus Border */
+  .login-input .MuiOutlinedInput-root {
+    border-radius: 6px;
+  }
+  
+  .login-input .MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: black;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-btn:hover {
+    background: black;
+    color: white;
+  }
+  
+  /* Sign-up Link */
+  .login-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .login-footer a {
+    color: #f4c542;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  

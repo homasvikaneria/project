@@ -1,0 +1,125 @@
+/* Blog Section */
+.blog-section {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .blog-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .blog-section .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .blog-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .blog-post {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-post:hover {
+    transform: translateY(-10px);
+  }
+  
+  .blog-post .post-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .blog-post .post-excerpt {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post .post-date {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .blog-post .read-more {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .blog-post .read-more:hover {
+    color: #0056b3;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    margin-top: 60px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+  }
+  
+  .faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-toggle-icon {
+    font-size: 18px;
+    color: #007BFF;
+  }
+  
+  .faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+    padding-left: 10px;
+    font-style: italic;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .blog-posts {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .blog-posts {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,689 @@
+/* Frontend/vite-project/src/Components/HomePage/HomePage.css */
+
+
+.homepage-container {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-content {
+  max-width: 800px;
+  margin: -200px 0px 0px 0px;
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.guide-btn {
+  background: none;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.sub-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.main-heading {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1d1d1d;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background-color: #1d1d1d;
+  margin: 20px auto;
+}
+
+.homepage-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.full-screen-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* PropertyFilter.css */
+.property-filter-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.filter-heading {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2d3e3f;
+  margin-bottom: 15px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.filter-btn {
+  padding: 8px 24px;
+  font-size: 16px;
+  color: #2d3e3f;
+  border: 2px solid #dcdcdc;
+  border-radius: 30px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #f4f4f4;
+}
+
+.register-btn1:hover {
+  background-color: #e6c066;
+}
+
+
+
+.agent-text {
+  max-width: 35%;
+  margin: 0px 0px 0px 50px;
+}
+
+.agent-text h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #1a202c;
+  line-height: 1.2;
+}
+
+.agent-text p {
+  font-size: 16px;
+  color: #4a5568;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.cta-container {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.register-btn1 {
+  background-color: #E7C873;
+  color: black;
+
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.agent-image-container {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.agent-image {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 0px 50px 0px 0px;
+}
+
+.register-btn1:hover {
+  background-color: #e6c066;
+}
+
+.contact-info {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+  display: flex;
+  align-items: center;
+}
+
+.real-estate-agent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px;
+  background-color: #F9F9F9;
+  margin: 50px 0px 0px 0px;
+}
+
+.section-title {
+  margin-top: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.properties-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 50px;
+  margin: 15px 0px 0px 0px;
+
+}
+
+.property-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+  padding: 15px;
+}
+
+.property-card:hover {
+  transform: scale(1.05);
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-details {
+  padding: 15px;
+}
+
+.property-details h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.property-details p {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+
+.random-properties {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 20px;
+  margin-top: -50px;
+}
+
+/* ✅ Ensures the cards align properly */
+.property-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  /* Ensures equal height */
+  flex-wrap: wrap;
+  /* Prevents overflow on smaller screens */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  /* Prevents stretching too wide */
+  margin: auto;
+  /* Centers the section */
+}
+
+/* ✅ Property card styling */
+.property-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 300px;
+  /* Ensures three fit side by side */
+  transition: transform 0.3s;
+  padding: 15px;
+  text-align: center;
+}
+
+.property-card:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Image styling */
+.property-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ✅ Property details */
+.property-name {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.property-price {
+  font-size: 1.2rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* ✅ View Details button */
+.view-details {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  /* color: #007bff; Choose your preferred color */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.view-details:hover {
+  /* color: #0056b3; Darker shade on hover */
+  text-decoration: underline;
+}
+
+
+
+.home-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.home-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  /* Adjusted card size */
+  height: 170px;
+  /* Adjusted height */
+}
+
+.right-card {
+  background-color: #fff1f1;
+  /* Light pink background */
+}
+
+.home-card-content {
+  flex: 1;
+}
+
+.home-card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.home-card p {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.home-btn {
+  background-color: #1b4f5c;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.home-btn:hover {
+  background-color: #1b4f5c;
+}
+
+.home-image {
+  width: 70px;
+  /* Adjusted size */
+  height: auto;
+  margin-left: 10px;
+}
+
+.trusted-companies {
+  background-color: #1B4F5C;
+  /* Dark Green (adjust as needed) */
+  color: white;
+  padding: 50px 0px 40px 0px;
+  text-align: center;
+  /* margin-top: -110px; */
+}
+
+.trusted-companies p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+/* Container styles */
+.dream-house-container {
+  text-align: center;
+  padding: 40px 20px;
+  margin: 50px 0px 90px 0px;
+}
+
+/* Title styles */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: gray;
+  margin-bottom: 30px;
+}
+
+/* Steps container */
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Each step */
+.step {
+  flex: 1;
+  text-align: center;
+  max-width: 300px;
+}
+
+/* Step images */
+.step-img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+/* Step title */
+.step-title {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+/* Step description */
+.step-description {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.why-work-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdf8f5;
+  padding: 50px 100px 120px 100px;
+  margin: 50px 0px 0px 0px;
+}
+
+.image-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overlay-image {
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  width: 120px;
+  height: auto;
+  z-index: 2;
+  
+}
+
+
+.overlay-image img {
+  /* width: 100%; */
+  height: 200px;
+  border-radius: 10px;
+  margin: 50px 0px 0px 140px;
+}
+
+.main-image img {
+  /* width: 320px; */
+  height: 300px;
+  border-radius: 10px;
+  margin: 90px 0px 0px 310px;
+}
+
+.property-tag {
+  position: absolute;
+  /* bottom: 20px; */
+  left: 20px;
+  margin: 120px 0px 0px 70px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+
+}
+
+.property-tag img {
+  /* width: 90px; */
+  height:120px;
+  margin: 100px 0px 0px 50px;
+}
+
+.text-section {
+  max-width: 500px;
+}
+
+.text-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-section p {
+  font-size: 16px;
+  color: #666;
+  margin: 15px 0;
+}
+
+.text-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.text-section ul li {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.learn-more-btn {
+  background-color: #1b4f5c;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.learn-more-btn:hover {
+  background-color: #143c46;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 120px;
+    font-family: "Poppins", sans-serif;
+    margin: 20px;
+  }
+  
+  .reviews-text {
+    flex: 1;
+  }
+  
+  .reviews-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.4;
+    text-align: left;
+    margin: 0px 0px 0px 25px;
+  }
+  
+  .reviews-stats {
+    display: flex;
+    gap: 80px;
+  }
+  
+  .stat {
+    text-align: center;
+    margin: 0px 15px 0px 0px;
+  }
+  
+  .stat-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+  }
+  
+  .stat-label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+  }
+  
+  .stars {
+    color: #f4c542;
+    font-size: 18px;
+    
+  }
+  
+
+  .testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* padding: 50px 20px; */
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .testimonial-card {
+    background: #F9F9F9;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    width: 320px;  /* Exact width as per your image */
+    height: 250px; /* Adjust height to match image */
+    text-align: left;
+  }
+  
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  
+  .user-info {
+    flex-grow: 1;
+  }
+  
+  .user-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .user-role {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+  }
+  
+  .quote-icon {
+    width: 24px;  /* Adjust based on provided inverted comma */
+    height: 24px;
+  }
+  
+  .testimonial-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+  
+  .api-note {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 10px;
+  }
+  

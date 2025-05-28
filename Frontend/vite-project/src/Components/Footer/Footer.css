@@ -1,0 +1,120 @@
+/* just_home/Frontend/vite-project/src/Components/Footer/Footer.css */
+/* Frontend/vite-project/src/Components/Footer/Footer.css */
+.footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 40px 0px 40px 0px;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Section: Logo + Follow Us + Social Icons */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.footer-logo img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-icons h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  margin-right: -40px;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons svg:hover {
+  color: #f0a500;
+}
+
+/* Bottom Section: Footer Links */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin: 5px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-column ul li:hover {
+  color: #f0a500;
+}
+
+/* App Store Links */
+.app-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-badge {
+  /* width: 140px; */
+  margin-top: 10px;
+  height: 60px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+.footer-upper{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 150px 0px 90px;
+}
+.follow{
+  margin: -2px 0px 0px 700px;
+  font-size: 20px;
+  font-weight: 500;
+  
+}

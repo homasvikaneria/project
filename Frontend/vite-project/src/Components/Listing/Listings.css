@@ -1,0 +1,92 @@
+
+.listings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+  }
+  
+  /* Title Styling */
+  .listings-title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .listings-title h6 {
+    text-transform: capitalize;
+    color: #888;
+  }
+  
+  .listings-title h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  /* Categories Container */
+  .categories-container {
+    display: flex;
+    gap: 10px;
+    background: white;
+    border-radius: 50px;
+    padding: 10px;
+    overflow-x: auto;
+    margin-bottom: -2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+  }
+  
+  .category-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    min-width: 80px;
+    transition: transform 0.2s;
+  }
+  
+  .category-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-box.active {
+    background: #f0f0f0;
+  }
+  
+  .category-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  /* Listings Grid */
+  .listings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+ .categor{
+  font-size: 25px;
+  color: black;
+  margin-left: -68px;
+ }
+ .Select{
+
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: -55px;
+ }
+ .heading{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  margin: 0px 0px 15px 0px;
+ }

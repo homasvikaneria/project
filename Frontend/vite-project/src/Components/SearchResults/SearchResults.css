@@ -1,0 +1,155 @@
+/* just_home/Frontend/vite-project/src/Components/SearchResults/SearchResults.css */
+/* Frontend/vite-project/src/Components/SearchResults/SearchResults.css */
+/* Wrapper */
+.findhomes-wrapper {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading */
+.findhomes-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: -5px 0px 20px 0px;
+}
+
+/* Grid Layout */
+.findhomes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Adjusted gap */
+    justify-content: center;
+}
+
+/* Property Card */
+.findhomes-card {
+    width: 500px; /* Adjusted width */
+    height: 220px;
+    display: flex;
+    background: white;
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    padding: 15px; /* Padding inside */
+}
+
+.findhomes-card:hover {
+    transform: scale(1.02);
+}
+
+/* Image Section */
+.findhomes-image-wrapper {
+    position: relative;
+    width: 45%;
+    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.findhomes-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Wishlist (Heart Icon) */
+.findhomes-wishlist {
+    position: absolute;
+    top: 0px;
+    right: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Default: White heart */
+.heart.outline {
+    font-size: 30px;
+    color: white;
+}
+
+/* Filled heart with red color */
+.heart.filled {
+    font-size: 30px;
+    color: red;
+}
+
+/* Heart Scaling Effect */
+.findhomes-wishlist:hover {
+    transform: scale(1.1);
+}
+
+/* Property Details */
+.findhomes-details {
+    width: 55%;
+    padding: 20px; /* Padding inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Title */
+.findhomes-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Category */
+.findhomes-category {
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Location */
+.findhomes-location {
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+/* Price */
+.findhomes-cost {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5a2d82;
+}
+
+.findhomes-price {
+    color: #5a2d82;
+}
+
+/* Availability */
+.findhomes-availability {
+    font-size: 14px;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* No Results Message */
+.findhomes-no-results {
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+}
+.search-results-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .findhomes-wrapper {
+    flex: 1; /* Takes the remaining space */
+  }
+  
+  @media (max-width: 768px) {
+    .search-results-container {
+      flex-direction: column;
+    }
+  }
+  

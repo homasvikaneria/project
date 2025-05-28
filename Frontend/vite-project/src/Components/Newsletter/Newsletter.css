@@ -1,0 +1,102 @@
+/* just_home/Frontend/vite-project/src/Components/Newsletter/Newsletter.css */
+.newsletter-container {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 80px 0px 0px 0px;
+    margin: 50px 0px 20px 0px;
+}
+
+.newsletter-content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.newsletter-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f4c869;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.newsletter-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 20px;
+}
+
+.newsletter-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.newsletter-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 8px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: auto;
+}
+
+.newsletter-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.newsletter-button {
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.newsletter-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: green;
+}
+
+/* Footer Section */
+.footer1 {
+    background-color: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:50px 0px 0px 0px;
+    /* width: 100vw; */
+}
+
+.footer-text {
+    font-size: 14px;
+    color: #000000;
+}
+
+.footer-logo {
+    height: 30px;
+}
+
+.social-icons img {
+    width: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
